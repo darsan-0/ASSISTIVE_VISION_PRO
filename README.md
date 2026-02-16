@@ -80,7 +80,7 @@ pip install -r requirements.txt
 Run the main program:
 
 ```bash
-python main.py
+python dashboard.py
 ```
 
 Make sure your camera is connected and accessible.
