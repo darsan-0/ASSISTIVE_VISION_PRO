@@ -49,11 +49,11 @@ The goal of this project is to make navigation safer and more independent for vi
 
 ```
 ASSISTIVE_VISION_PRO/
-│
-├── main.py
+├── dashboard.py
+├── detector.py
 ├── requirements.txt
-├── README.md
-└── assets/
+├── speaker.py
+└── yolov8n.pt
 ```
 
 ---
