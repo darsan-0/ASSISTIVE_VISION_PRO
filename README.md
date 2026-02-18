@@ -1,4 +1,3 @@
----
 
 # 👁️ ASSISTIVE VISION PRO
 
@@ -9,7 +8,6 @@
 🚀 Real-Time Detection • 🔊 Smart Voice Guidance • 🧭 AI Safe Path Navigation • 🎯 Accessibility Focused
 </p>
 
----
 
 ## 🧩 Project Vision
 
