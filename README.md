@@ -1,47 +1,132 @@
+---
+
 # 👁️ ASSISTIVE VISION PRO
 
-> **AI-Powered Assistive System for Visually Impaired Users**
-> A computer vision project designed to help visually challenged individuals understand their surroundings using real-time object detection and audio feedback.
+> 🧠 **AI-Powered Real-Time Assistive Vision System for Visually Impaired Users**
+> Built with Computer Vision, Deep Learning, and Intelligent Audio Guidance.
+
+<p align="center">
+🚀 Real-Time Detection • 🔊 Smart Voice Guidance • 🧭 AI Safe Path Navigation • 🎯 Accessibility Focused
+</p>
 
 ---
 
-## 🚀 Overview
+## 🧩 Project Vision
 
-**ASSISTIVE VISION PRO** is an intelligent assistive application that uses Computer Vision and Artificial Intelligence to detect objects from a live camera feed and provide voice-based guidance.
+**ASSISTIVE VISION PRO** is an intelligent assistive technology designed to enhance independence and safety for visually impaired individuals.
 
-The goal of this project is to make navigation safer and more independent for visually impaired users by combining:
+Using **YOLOv8 object detection**, the system analyzes live camera feeds, estimates distance, predicts movement risk, and provides **real-time spoken guidance** to help users navigate safely.
 
-* 🎥 Real-time video processing
-* 🤖 Object detection
-* 🔊 Audio assistance
+This project combines:
+
+* Computer Vision
+* Human-Centered AI
+* Accessibility Engineering
+* Real-Time Processing
+
+---
+
+## ⚡ Key Highlights
+
+✨ AI Safe Path Recommendation
+✨ Distance Estimation + Step Prediction
+✨ Direction Awareness (LEFT / FRONT / RIGHT)
+✨ Radar-Style Visualization System
+✨ Voice Feedback + Smart Beep Alerts
+✨ Fast Lightweight YOLOv8 Model
+✨ Designed for Real-World Assistive Use
+
+---
+
+## 🎥 System Architecture
+
+```
+Camera Input
+     │
+     ▼
+YOLOv8 Detection Engine
+     │
+     ├── Distance Estimation
+     ├── Direction Prediction
+     ├── Speed Analysis
+     │
+     ▼
+AI Guidance Engine
+     │
+     ├── Voice Output (TTS)
+     ├── Safety Alerts
+     └── Radar Visualization
+```
+
+---
+
+## 🧠 AI Pipeline Explained
+
+### 1️⃣ Detection Engine
+
+Objects are detected using **YOLOv8 Nano** for real-time performance.
+
+### 2️⃣ Distance Estimation
+
+Approximate distance is calculated using focal length estimation and bounding box width.
+
+### 3️⃣ Direction Analysis
+
+Objects are classified into:
+
+* LEFT
+* FRONT
+* RIGHT
+
+based on screen position.
+
+### 4️⃣ Smart Guidance System
+
+AI evaluates obstacles and suggests:
+
+✔ Walk straight
+✔ Move left/right
+✔ Stop immediately
+
+### 5️⃣ Audio Assistance
+
+Text-to-Speech provides real-time feedback while beep alerts warn about nearby danger.
 
 ---
 
 ## ✨ Features
 
-✅ Real-time Object Detection
-✅ Voice Feedback for Detected Objects
-✅ Lightweight Python Implementation
-✅ Easy Setup & Execution
-✅ Assistive Technology Focused Design
-
----
-
-## 🧠 How It Works
-
-1. The system captures live video from the camera.
-2. AI models detect objects in the frame.
-3. Detected objects are converted into speech output.
-4. The user receives real-time audio assistance.
+| Feature                 | Description                         |
+| ----------------------- | ----------------------------------- |
+| 🧠 AI Detection         | Real-time object recognition        |
+| 📏 Distance Awareness   | Calculates estimated meters + steps |
+| 🔊 Voice Navigation     | Real-time spoken instructions       |
+| 🚨 Danger Alerts        | Fast & slow beep warnings           |
+| 📡 Radar UI             | Visual obstacle map                 |
+| 🎯 Accessibility Design | Built for assistive use cases       |
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python 🐍
-* **Computer Vision:** OpenCV
-* **AI / Detection:** YOLO / Deep Learning Models
-* **Audio Output:** Text-to-Speech (TTS)
+**Language**
+
+* Python 🐍
+
+**AI & Vision**
+
+* Ultralytics YOLOv8
+* OpenCV
+
+**Interface**
+
+* Tkinter GUI
+* Pillow Imaging
+
+**Audio**
+
+* pyttsx3 (Offline TTS)
+* Windows Sound Alerts
 
 ---
 
@@ -49,18 +134,18 @@ The goal of this project is to make navigation safer and more independent for vi
 
 ```
 ASSISTIVE_VISION_PRO/
-├── dashboard.py
-├── detector.py
-├── requirements.txt
-├── speaker.py
-└── yolov8n.pt
+├── dashboard.py     # Main UI + AI Guidance
+├── detector.py      # Object Detection Engine
+├── speaker.py       # Voice + Alert System
+├── yolov8n.pt       # AI Model
+└── requirements.txt
 ```
 
 ---
 
 ## ⚙️ Installation
 
-Clone the repository:
+Clone repository:
 
 ```bash
 git clone https://github.com/darsan-0/ASSISTIVE_VISION_PRO.git
@@ -75,63 +160,92 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Usage
-
-Run the main program:
+## ▶️ Run Application
 
 ```bash
 python dashboard.py
 ```
 
-Make sure your camera is connected and accessible.
+Make sure:
+
+✔ Webcam connected
+✔ Python 3.9+ installed
+✔ Windows OS recommended (for audio alerts)
 
 ---
 
-## 🎯 Use Cases
+## 🧪 Example AI Guidance Output
 
-* Assistive navigation for visually impaired users
-* Smart wearable prototypes
-* AI accessibility research
-* Computer vision learning projects
+```
+Person nearby from LEFT. Move right
+Car detected 5 steps ahead. Walk straight
+Bus very close. Stop immediately
+```
 
 ---
 
-## 🔮 Future Improvements
+## 🎯 Real-World Applications
 
-* 📱 Mobile app integration
-* 🎧 Smart headphone compatibility
-* 🧭 Indoor navigation assistance
-* 🌐 Cloud AI support
-* 🗣️ Multi-language voice output
+* 👁️ Assistive technology for visually impaired users
+* 🧭 Smart wearable research
+* 🚶 AI mobility assistance
+* 🧪 Computer vision learning projects
+* 🤖 Accessibility-focused AI systems
+
+---
+
+## 🚀 Future Roadmap
+
+* 📱 Android Mobile Version
+* 🌍 Multi-Language Voice Support
+* 🎧 Smart Glasses Integration
+* ☁️ Cloud AI Enhancements
+* 🧭 Indoor Navigation Intelligence
+* 🔋 Edge AI Optimization
+
+---
+
+## 📊 Performance Goals
+
+| Metric           | Target    |
+| ---------------- | --------- |
+| Detection Speed  | Real-Time |
+| Model            | YOLOv8n   |
+| CPU Support      | ✅ Yes     |
+| GPU Acceleration | Optional  |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Submit a Pull Request
+1. Fork the repo
+2. Create feature branch
+3. Commit changes
+4. Open Pull Request
 
 ---
 
 ## 📜 License
 
-This project is open-source and available under the **MIT License**.
+MIT License — Open source and free to use.
 
 ---
 
 ## 👨‍💻 Author
 
 **Darsan**
-GitHub: https://github.com/darsan-0
+🎓 AIML Engineering Student
+🔗 [https://github.com/darsan-0](https://github.com/darsan-0)
 
 ---
 
-## ⭐ Support
+## ⭐ Support This Project
 
-If you find this project useful, consider giving it a ⭐ on GitHub!
+If this project helped you or inspired you:
+
+⭐ Star the repository
+🍴 Fork and build your own AI assistive tools
 
 ---
+
+
