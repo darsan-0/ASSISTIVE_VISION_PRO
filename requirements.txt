@@ -1,0 +1,19 @@
+ultralytics==8.3.0
+opencv-python==4.10.0.84
+pillow
+pyttsx3
+numpy
+
+# Web UI server
+flask>=3.0.0
+flask-socketio>=5.3.6
+python-engineio>=4.9.0
+python-socketio>=5.11.0
+eventlet>=0.35.0
+
+# Voice commands
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+
+# Native desktop window (optional — falls back to browser)
+pywebview>=5.0.5
