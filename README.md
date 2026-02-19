@@ -1,42 +1,61 @@
 
+---
+
 # 👁️ ASSISTIVE VISION PRO
 
-> 🧠 **AI-Powered Real-Time Assistive Vision System for Visually Impaired Users**
-> Built with Computer Vision, Deep Learning, and Intelligent Audio Guidance.
+### 🧠 AI Mobility Assistant for Visually Impaired Navigation
 
 <p align="center">
-🚀 Real-Time Detection • 🔊 Smart Voice Guidance • 🧭 AI Safe Path Navigation • 🎯 Accessibility Focused
+
+![AI](https://img.shields.io/badge/AI-YOLOv8-black?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge)
+![Computer Vision](https://img.shields.io/badge/Computer-Vision-red?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-First-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+
 </p>
 
-
-## 🧩 Project Vision
-
-**ASSISTIVE VISION PRO** is an intelligent assistive technology designed to enhance independence and safety for visually impaired individuals.
-
-Using **YOLOv8 object detection**, the system analyzes live camera feeds, estimates distance, predicts movement risk, and provides **real-time spoken guidance** to help users navigate safely.
-
-This project combines:
-
-* Computer Vision
-* Human-Centered AI
-* Accessibility Engineering
-* Real-Time Processing
+<p align="center">
+🚀 Real-Time Detection • 🔊 Smart Voice Guidance • 🧭 AI Safe Navigation • ♿ Human-Centered Design
+</p>
 
 ---
 
-## ⚡ Key Highlights
+# 🌍 About The Project
 
-✨ AI Safe Path Recommendation
-✨ Distance Estimation + Step Prediction
-✨ Direction Awareness (LEFT / FRONT / RIGHT)
-✨ Radar-Style Visualization System
-✨ Voice Feedback + Smart Beep Alerts
-✨ Fast Lightweight YOLOv8 Model
-✨ Designed for Real-World Assistive Use
+**ASSISTIVE VISION PRO** is a real-time AI assistive system designed to help visually impaired individuals navigate safely using computer vision and intelligent audio feedback.
+
+Using **YOLOv8** and a lightweight AI pipeline, the system detects nearby objects, estimates distance, predicts risk level, and delivers spoken guidance in real time.
+
+> 🎯 Goal: Build a human-centered AI system that transforms vision into actionable audio intelligence.
 
 ---
 
-## 🎥 System Architecture
+# 🎥 Core Capabilities
+
+## ⚡ Real-Time Intelligence
+
+* Live object detection using YOLOv8
+* Direction awareness (LEFT / FRONT / RIGHT)
+* Distance estimation using focal-length logic
+* AI risk prediction system
+
+## 🔊 Smart Guidance System
+
+* Voice-based navigation suggestions
+* Intelligent danger alerts
+* Offline text-to-speech engine
+* Beep alerts for critical hazards
+
+## 🧭 Assistive Navigation Logic
+
+* Walk Straight suggestions
+* Move Left / Move Right prompts
+* Stop Immediately warnings
+
+---
+
+# 🧠 AI Architecture
 
 ```
 Camera Input
@@ -44,113 +63,69 @@ Camera Input
      ▼
 YOLOv8 Detection Engine
      │
+     ├── Bounding Box Analysis
      ├── Distance Estimation
-     ├── Direction Prediction
-     ├── Speed Analysis
+     ├── Direction Classification
      │
      ▼
 AI Guidance Engine
      │
-     ├── Voice Output (TTS)
-     ├── Safety Alerts
+     ├── Safety Decision Logic
+     ├── Voice Output System
      └── Radar Visualization
 ```
 
 ---
 
-## 🧠 AI Pipeline Explained
+# 🛠️ Tech Stack
 
-### 1️⃣ Detection Engine
+## 💻 Programming
 
-Objects are detected using **YOLOv8 Nano** for real-time performance.
+* Python
 
-### 2️⃣ Distance Estimation
-
-Approximate distance is calculated using focal length estimation and bounding box width.
-
-### 3️⃣ Direction Analysis
-
-Objects are classified into:
-
-* LEFT
-* FRONT
-* RIGHT
-
-based on screen position.
-
-### 4️⃣ Smart Guidance System
-
-AI evaluates obstacles and suggests:
-
-✔ Walk straight
-✔ Move left/right
-✔ Stop immediately
-
-### 5️⃣ Audio Assistance
-
-Text-to-Speech provides real-time feedback while beep alerts warn about nearby danger.
-
----
-
-## ✨ Features
-
-| Feature                 | Description                         |
-| ----------------------- | ----------------------------------- |
-| 🧠 AI Detection         | Real-time object recognition        |
-| 📏 Distance Awareness   | Calculates estimated meters + steps |
-| 🔊 Voice Navigation     | Real-time spoken instructions       |
-| 🚨 Danger Alerts        | Fast & slow beep warnings           |
-| 📡 Radar UI             | Visual obstacle map                 |
-| 🎯 Accessibility Design | Built for assistive use cases       |
-
----
-
-## 🛠️ Tech Stack
-
-**Language**
-
-* Python 🐍
-
-**AI & Vision**
+## 🤖 AI / Computer Vision
 
 * Ultralytics YOLOv8
 * OpenCV
 
-**Interface**
+## 🖥️ Interface
 
-* Tkinter GUI
-* Pillow Imaging
+* Tkinter
+* HTML UI
 
-**Audio**
+## 🔊 Audio System
 
-* pyttsx3 (Offline TTS)
-* Windows Sound Alerts
+* pyttsx3 (Offline Voice)
+* Alert Sound Engine
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 ASSISTIVE_VISION_PRO/
-├── dashboard.py     # Main UI + AI Guidance
-├── detector.py      # Object Detection Engine
-├── speaker.py       # Voice + Alert System
-├── yolov8n.pt       # AI Model
+│
+├── dashboard.py        # Main AI Dashboard
+├── detector.py         # Detection + Distance Logic
+├── speaker.py          # Voice Guidance Engine
+├── voice_commands.py   # Voice Interaction
+├── ui.html             # Interface Layout
+├── yolov8n.pt          # AI Model
 └── requirements.txt
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation Guide
 
-Clone repository:
+## 1️⃣ Clone Repository
 
 ```bash
 git clone https://github.com/darsan-0/ASSISTIVE_VISION_PRO.git
 cd ASSISTIVE_VISION_PRO
 ```
 
-Install dependencies:
+## 2️⃣ Install Requirements
 
 ```bash
 pip install -r requirements.txt
@@ -158,92 +133,84 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Run Application
+# ▶️ Run The System
 
 ```bash
 python dashboard.py
 ```
 
-Make sure:
-
-✔ Webcam connected
-✔ Python 3.9+ installed
-✔ Windows OS recommended (for audio alerts)
+✅ Webcam Required
+✅ Python 3.9+ Recommended
+✅ Works on CPU (GPU Optional)
 
 ---
 
-## 🧪 Example AI Guidance Output
+# 📢 Example AI Output
 
 ```
-Person nearby from LEFT. Move right
-Car detected 5 steps ahead. Walk straight
-Bus very close. Stop immediately
+Person detected on LEFT. Move right.
+Car detected 5 steps ahead. Walk straight.
+Bus very close. Stop immediately.
 ```
 
 ---
 
-## 🎯 Real-World Applications
+# 🌐 Real-World Applications
 
-* 👁️ Assistive technology for visually impaired users
-* 🧭 Smart wearable research
-* 🚶 AI mobility assistance
-* 🧪 Computer vision learning projects
-* 🤖 Accessibility-focused AI systems
+* Assistive Technology for Blind Users
+* Smart AI Mobility Devices
+* Edge AI Research Projects
+* Computer Vision Learning Platform
+* Human-Centered AI Systems
 
 ---
 
-## 🚀 Future Roadmap
+# 🚀 Future Enhancements
 
-* 📱 Android Mobile Version
+* 📱 Mobile App Version
 * 🌍 Multi-Language Voice Support
-* 🎧 Smart Glasses Integration
-* ☁️ Cloud AI Enhancements
+* 🥽 Smart Glasses Integration
+* ☁️ Cloud AI Expansion
 * 🧭 Indoor Navigation Intelligence
-* 🔋 Edge AI Optimization
+* ⚡ Faster Edge AI Optimization
 
 ---
 
-## 📊 Performance Goals
+# 📊 Performance Targets
 
-| Metric           | Target    |
-| ---------------- | --------- |
-| Detection Speed  | Real-Time |
-| Model            | YOLOv8n   |
-| CPU Support      | ✅ Yes     |
-| GPU Acceleration | Optional  |
+| Feature             | Status |
+| ------------------- | ------ |
+| Real-Time Detection | ✅      |
+| CPU Optimization    | ✅      |
+| Voice Guidance      | ✅      |
+| Radar Visualization | ✅      |
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
+
+Pull requests are welcome.
 
 1. Fork the repo
-2. Create feature branch
+2. Create your feature branch
 3. Commit changes
-4. Open Pull Request
+4. Open a Pull Request
 
 ---
 
-## 📜 License
+# 👨‍💻 Author
 
-MIT License — Open source and free to use.
-
----
-
-## 👨‍💻 Author
-
-**Darsan**
+**Durga Darsan Mannem**
 🎓 AIML Engineering Student
 🔗 [https://github.com/darsan-0](https://github.com/darsan-0)
 
 ---
 
-## ⭐ Support This Project
+# ⭐ Support The Project
 
-If this project helped you or inspired you:
+If this project helped or inspired you:
 
 ⭐ Star the repository
-🍴 Fork and build your own AI assistive tools
+🍴 Fork and build your own AI assistive systems
 
 ---
-
-
